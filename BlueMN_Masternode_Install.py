@@ -336,7 +336,7 @@ def start_wallet(wallet_data):
     config_path = wallet_data.get("config_path")
 
     print("Start Wallet...")
-    comm = "%s -deamon &  " % ser_path
+    comm = "%s -daemon &  " % ser_path
     print(comm)
     ret = subprocess.call([comm], shell=True)
 
@@ -458,7 +458,7 @@ def add_wallet(wallet_data, cover=True):
         "listen=1 \n"
         "maxconnections=256 \n"
         "port=%s \n"
-        "deamon=1 \n"
+        "daemon=1 \n"
         "rpcport=%s \n"
         "rpcuser=%s \n"
         "rpcpassword=%s \n"
