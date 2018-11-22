@@ -14,8 +14,7 @@ git clone https://github.com/BluemnProject/BMN_Massternode_VPS_Deploy_Tools.git
 2、RUN Tools and Copy Parameters.
 
 ```
-cd BMN_Massternode_VPS_Deploy_Tools
-python BlueMN_Masternode_Install.py
+cd BMN_Massternode_VPS_Deploy_Tools && apt-get install python -y && python BlueMN_Masternode_Install.py
 ```
 
 Wait until it's finished, print the text at the end, copy it out, and then replace it with your TXID and Index.
