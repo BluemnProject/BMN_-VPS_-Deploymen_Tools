@@ -47,4 +47,6 @@ Put the updated configuration entry into masternode.conf, then restart the walle
 
 
 
-- BlueMN TEAM
+
+
+-BlueMN TEAM
