@@ -27,7 +27,7 @@ import os
 
 print("install pip and python lib...")
 ret = subprocess.call(
-    ['apt-get install python-pip python-requests python-virtualenv unzip  -y'], shell=True)
+    ['apt-get install python-pip python-requests python-virtualenv unzip libzmq3-dev  -y'], shell=True)
 
 import requests
 import pickle
@@ -645,7 +645,7 @@ def get_cloud_conf(filename="wallet_config.json"):
 def main_app():
 
     print("BlueMN Masternode install Tools")
-    # init_env()
+    init_env()
     print("Initialize the system environment....")
 
     print("Download BMN Wallet Dat from BlueMN api")
