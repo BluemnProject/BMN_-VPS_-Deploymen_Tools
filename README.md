@@ -22,7 +22,7 @@ Log in to your VPS using the root role (our default deployment path is /root, al
 
 1、Git clone project
 ```
-git clone https://github.com/BluemnProject/BMN_Massternode_VPS_Deploy_Tools.git 
+apt-get update && apt-get install git -y && git clone https://github.com/BluemnProject/BMN_Massternode_VPS_Deploy_Tools.git 
 
 ```
 2、RUN Tools and Copy Parameters.
