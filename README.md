@@ -10,6 +10,9 @@ Use this tool to complete the BMN Masternode deployment in your own VPS
 3、and sent 1000BMN to this addr,and wait for 6 Confirmation at least
 4、Get TXID and Index.Copy and save it somewhere. (open Tools-> Debug console and input "masternode outputs" ,check TDIX and Index(must be 0 or 1))
 5、Turn on maternode.conf(open tools-> open masternode configuration file ) and ready start configuring VPS 
+6、Install BMN masternode using tools(tutorial below)
+7、Copy the text, modify it, put it in masternode.conf, restart the wallet,
+
 ```
 
 
