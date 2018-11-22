@@ -2,6 +2,15 @@
 
 Use this tool to complete the BMN Masternode deployment in your own VPS
 
+# Prepare
+
+1、With 1001 BMN
+2、Create a new receiving address.(open File-> receiving addresses -> New and Copy the address) 
+3、and sent 1000BMN to this addr,and wait for 6 Confirmation at least
+4、Get TXID and Index.Copy and save it somewhere. (open Tools-> Debug console and input "masternode outputs" ,check TDIX and Index(must be 0 or 1))
+5、Turn on maternode.conf(open tools-> open masternode configuration file ) and ready start configuring VPS 
+
+
 # Guide
 
 Log in to your VPS using the root role (our default deployment path is /root, all users need to use root).
