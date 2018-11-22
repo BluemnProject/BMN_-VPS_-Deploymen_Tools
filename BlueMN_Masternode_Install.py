@@ -7,9 +7,6 @@
 1、初始化linux环境
 2、安装和配置钱包masternode
 
-3、日常监控运行masternode状态，推送状态到服务器（任务）
-4、添加新钱包，删除钱包，查看钱包
-
 """
 
 import argparse
@@ -344,7 +341,7 @@ def start_wallet(wallet_data):
     ret = subprocess.call([comm], shell=True)
 
     print("Wait 5 minutes, synchronize the network...")
-    time.sleep(280)
+    time.sleep(120)
 
     comm = "%s getinfo " % cli_path
     print(comm)
@@ -480,7 +477,7 @@ def add_wallet(wallet_data, cover=True):
 
     # 启动钱包,第一次启动要久一点四件同步
     start_wallet(wallet_data)
-    time.sleep(60)
+    time.sleep(180)
 
     # 第二次启动,设置模式
     stop_wallet(wallet_data)
