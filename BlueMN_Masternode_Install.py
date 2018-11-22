@@ -27,7 +27,7 @@ import os
 
 print("install pip and python lib...")
 ret = subprocess.call(
-    ['apt-get install python-pip python-requests python-virtualenv -y'], shell=True)
+    ['apt-get install python-pip python-requests python-virtualenv unzip  -y'], shell=True)
 
 import requests
 import pickle
@@ -79,7 +79,6 @@ def operation_write_file(file_name, strs):
         finally:
             h_file.close()
     except IOError:
-        print("IOError")
         print("IOError")
 
 
@@ -344,8 +343,8 @@ def start_wallet(wallet_data):
     print(comm)
     ret = subprocess.call([comm], shell=True)
 
-    print("Wait 2 minutes, synchronize the network...")
-    time.sleep(30)
+    print("Wait 5 minutes, synchronize the network...")
+    time.sleep(280)
 
     comm = "%s getinfo " % cli_path
     print(comm)
@@ -481,7 +480,7 @@ def add_wallet(wallet_data, cover=True):
 
     # 启动钱包,第一次启动要久一点四件同步
     start_wallet(wallet_data)
-    time.sleep(30)
+    time.sleep(60)
 
     # 第二次启动,设置模式
     stop_wallet(wallet_data)
@@ -543,7 +542,12 @@ def add_wallet(wallet_data, cover=True):
     # Copy the following entries, replace your TXID with Index, and add to your masternode.conf, restart wallet and start masternode
 
 
-        BMNMASTERNODEA %s:%s %s 6d888a(replace your TXID here)a60db47016c6a (replace your Index here)
+    BMNMASTERNODEA %s:%s %s replace-your-TXID-here replace-your-Index-here
+
+
+    # example
+
+    BMNMASTERNODEA 182.44.2.142:15003 3s7BnJMCkos787zqrCCqajJipLBGZpRFNkDsuUNUuzrmv5bSBHj 261cc28ba4326b92a11c344d418507baf06d1c86de593ba880f40fd701ec25b7 1
 
 
     # by BlueMN Tools
