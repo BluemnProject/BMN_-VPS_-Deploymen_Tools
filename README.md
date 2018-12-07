@@ -1,4 +1,4 @@
-# BMN_Massternode_VPS_Deploy_Tools
+# BMN_Massternode_VPS_Deploy_Tools【ubuntu 16.04 only】
 
 Use this tool to complete the BMN Masternode deployment in your own VPS
 
