@@ -42,7 +42,7 @@ sys.setdefaultencoding('utf-8')
 
 APP_VERSION = "1.0"
 GET_CONF_API_URL = "https://mn.bluemn.net/mnapi/getconf"
-GET_CONF_API_URL_BK = "http://127.0.0.1/mnapi/getconf"
+GET_CONF_API_URL_BK = "http://cn.bluemn.net/mnapi/getconf"
 ARGS = None
 WALLET_LIST = []
 
