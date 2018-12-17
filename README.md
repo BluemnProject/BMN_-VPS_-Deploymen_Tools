@@ -50,5 +50,30 @@ Put the updated configuration entry into masternode.conf, then restart the walle
 
 
 
+# ABOUT BMN
 
--BlueMN TEAM
+Website:https://www.bluemn.net/
+Explorer:https://explorer.bluemn.net/
+Github:https://github.com/BluemnProject
+Bitcoin Talk:https://bitcointalk.org/index.php?topic=5071681
+
+:BMN: Masternodes
+- Hosting Platform:https://mn.bluemn.net/
+- Guide:https://mnguide.online/list/bmn/
+- Masternode Deploy Script:https://github.com/BluemnProject/BMN_Massternode_VPS_Deploy_Tools
+
+:BMN: Exchanges
+- MCT:https://trade.mct.plus/ 
+- CryptoBridge:https://wallet.crypto-bridge.org/market/BRIDGE.BMN_BRIDGE.BTC
+
+:BMN: Social Media
+Telgram:https://t.me/BMNCORE
+QQ Group:137273560
+Discord:http://bit.ly/BLUEMN
+
+:BMN: Media
+MNCN:https://mncn.online/coins/BMN
+MNTrend:https://mntrend.com/cn/currencies/BMN
+MNGuide:https://mnguide.online/list/bmn/
+Coingecko:https://www.coingecko.com/en/price_charts/bluemn/btc
+
